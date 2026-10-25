@@ -36,6 +36,9 @@ The Munki recipe includes vendor-derived scripts:
   and launches Scout for the console user.
 - `uninstall_script` invokes Scout's installed uninstaller with `--yes`.
 
+Munki uses the package receipts for installation checks. Add organization-specific
+health, registration, or profile checks in a private override's `installcheck_script`.
+
 Deploy Certiv's configuration profiles before installation and keep them assigned
 until uninstallation finishes. Configure deployment targeting in your management
 system.

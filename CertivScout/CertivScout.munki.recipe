@@ -148,7 +148,7 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 export PROVISIONING_API_KEY="%CERTIV_PROVISIONING_KEY%"
 
 PROVISIONING_API_KEY="${PROVISIONING_API_KEY:-${1:-}}"
-CERTIV_API_URL="%CERTIV_API_URL%"
+CERTIV_API_URL="${CERTIV_API_URL:-%CERTIV_API_URL%}"
 
 SUPPORT_DIR="/Library/Application Support/ai.certiv.scout"
 CERTIV="$SUPPORT_DIR/certiv"
